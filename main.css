@@ -1,18 +1,19 @@
 
-*{
+* {
  margin: 0;
  padding: 0;
  font-family: sans-serif;
+ outline: none;
 }
 
-body{
+body {
  background-image: url("images/christmas.jpg"); 
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: cover;
 }
 
-#mainarea{
+#mainarea {
  width: 400px;
  height: 600px;
  top: 20%;
@@ -23,8 +24,8 @@ body{
  border-radius: 2px;
 }
 
-#topnav{
-    height: 70px;
+#topnav {
+    height: 60px;
     width: inherit;
     background: #007171;
 }
@@ -37,7 +38,7 @@ body{
     font-style: #fff;
 }
 
-#searchbar{
+#searchbar {
     height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -48,18 +49,48 @@ body{
     border-bottom-color: #999;
 }
 
-#maincontent{
+#maincontent {
     padding: 20px;
+}
+
+#navbuttonsdiv {
+    height: 35px;
+    background: #007171;
+    box-shadow: 0px 5px 8px #bdbdbd;
 }
 
 .navtext {
     color: #ffffff;
 }
 
-.boxtext {
+.searchinput {
     color: #e0e0e0;
+    font-size: 16px;
+    width: 300;
+    border: none;
 }
 
+.searchinput:focus {
+    color: #444444; 
+}
+
+.navbutton {
+    float: left;
+    width: 33.3%;
+    height: inherit;
+    background: #007171;
+    border: none;
+    color: #B2D8D8;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navbutton:focus {
+    border-bottom: solid;
+    border-width: 2px;
+    border-bottom-color: #ffffff;
+    color: #ffffff;
+}
 
 
 
