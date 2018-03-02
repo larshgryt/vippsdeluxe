@@ -1,0 +1,78 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+}
+
+body{
+ background-image: url("images/christmas.jpg"); 
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+}
+
+#mainarea{
+ width: 400px;
+ height: 600px;
+ top: 20%;
+ left: 20%;
+ background: #ffffff;
+ position: absolute;
+ overflow: hidden;
+ border-radius: 2px;
+}
+
+#topnav{
+    height: 70px;
+    width: inherit;
+    background: #007171;
+}
+
+#topnavcontent {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-style: #fff;
+}
+
+#searchbar{
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #999;
+}
+
+#maincontent{
+    padding: 20px;
+}
+
+.navtext {
+    color: #ffffff;
+}
+
+.boxtext {
+    color: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
