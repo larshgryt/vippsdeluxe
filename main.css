@@ -145,13 +145,17 @@ input{
 
 #preview_content{
     padding: 10px;
-    margin:10px; 
+    margin-left:35px;
+    margin-right:35px;
     background: #fff;
 }
 
 #send_button{
+    
     border-radius: 25px;
     color: #007171;
+    margin:20px;
+    margin-left: 135px;
     background-color: #fff;
     width: 10em;
     height: 2em;

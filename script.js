@@ -133,6 +133,10 @@ function makePreview() {
     preview.style.display = "block";
 }
 
+function sendGift(amount, image) {
+    
+}
+
 
 
 
