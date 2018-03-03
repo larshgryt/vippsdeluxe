@@ -9,8 +9,13 @@ var sendifo_form = document.getElementById("sendifo_form");
 var topnav_button_left = document.getElementById("topnav_button_left");
 var topnav_button_right = document.getElementById("topnav_button_right");
 var preview = document.getElementById("preview");
-
-
+var output_from_name = document.getElementById("output_from_name");
+var output_name = document.getElementById("output_name");
+var output_city = document.getElementById("output_city");
+var output_zip = document.getElementById("output_zip");
+var output_amount= document.getElementById("output_amount");
+var output_street = document.getElementById("output_street");
+var output_message = document.getElementById("output_message");
 
 //Button click changes the content (3 buttons)
 function sendPage() {
@@ -68,6 +73,12 @@ function makePreview() {
     var zip = document.getElementById("input_address_code").value;
     var image = document.getElementById("image").value;
     
+    output_message.innerHTML = message;
+    output_street.innerHTML = street;
+    output_amount.innerHTML = output_amount.innerHTML + amount;
+    output_zip.innerHTML = zip;
+    output_city.innerHTML = city;
+
     sendifo_form.style.display = "none";
     preview.style.display = "block"
 }
