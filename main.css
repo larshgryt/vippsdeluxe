@@ -116,6 +116,11 @@ input{
     color: #fff;
 }
 
+#receive{
+    background: #007171;
+    height: inherit;
+}
+
 #sendifo_form{
     display: none;
     background: #007171;
@@ -156,7 +161,7 @@ input{
     background: #fff;
 }
 
-#send_button{
+#send_button, #scan_button{
     border-radius: 25px;
     color: #007171;
     background-color: #fff;
