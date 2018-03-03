@@ -1,8 +1,12 @@
 
+@font-face{
+font-family: 'Kuro-regular';
+src:url(kuro-regular.ttf) format('truetype');
+}
 * {
  margin: 0;
  padding: 0;
- font-family: sans-serif;
+ font-family: 'Kuro-regular', Fallback, sans-serif;
  outline: none;
 }
 
