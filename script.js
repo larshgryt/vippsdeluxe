@@ -89,6 +89,10 @@ function makePreview() {
     preview.style.display = "block";
 }
 
+function sendGift(int amount, img image){
+    
+}
+
 
 
 
