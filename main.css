@@ -45,7 +45,7 @@ input{
 }
 
 #topnavcontent {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 #searchbar {
@@ -140,6 +140,12 @@ input{
 
 #address_form p{
     padding: 10px;
+}
+
+#topnav_button_right {
+    float: right;
+    padding-right: 30px;
+    font-size: 30px;
 }
 
 
