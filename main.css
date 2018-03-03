@@ -21,6 +21,10 @@ option {
     height: 15%;
 }
 
+input{
+    border: none;
+}
+
 #mainarea {
  width: 400px;
  height: 600px;
@@ -108,10 +112,34 @@ option {
     padding-right: 5px;
 }
 
+.whitetext{
+    color: #fff;
+}
+
 #sendifo_form{
     display: none;
     background: #007171;
     height: inherit;
+}
+
+.center_element img, .center_element p{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.message{
+    background-color: #fff;
+}
+
+#address_form{
+    border-radius: 25px;
+    background: #fff;
+    margin: 10px;
+}
+
+#address_form p{
+    padding: 10px;
 }
 
 
