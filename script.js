@@ -66,14 +66,13 @@ function chooseUser() {
 
 function backToSendGift(){
 	if(topnav_button_left.innerHTML == "X"){
-		
-	   sendifo_form.style.display = "none";
-	   send.style.display = "block";
-       buttonNavDiv.style.display = "block";
-       preview.style.display = "none";
-       searchBar.style.display = "block";
-       topnav_button_left.innerHTML = "&lt";
-       topnav_button_right.style.display = "none";
+        sendifo_form.style.display = "none";
+        send.style.display = "block";
+        buttonNavDiv.style.display = "block";
+        preview.style.display = "none";
+        searchBar.style.display = "block";
+        topnav_button_left.innerHTML = "&lt";
+        topnav_button_right.style.display = "none";
 	}
     else if(topnav_button_left.innerHTML == "&lt") {
         preview.style.display = "none";
