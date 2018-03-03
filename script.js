@@ -56,7 +56,9 @@ function backToSendGift(){
 	if(topnav_button_left.innerHTML == "X"){
 		
 	   sendifo_form.style.display = "none";
-	   sendPage.style.display = "block";
+	   send.style.display = "block";
+       buttonNavDiv.style.display = "block";
+       searchBar.style.display = "block"
 	}
 }
 
@@ -66,10 +68,11 @@ function makePreview() {
     var street = document.getElementById("input_address_street").value;
     var city = document.getElementById("input_address_city").value;
     var zip = document.getElementById("input_address_code").value;
-    var image = document.getElementById("image").value;
     
     sendifo_form.style.display = "none";
     preview.style.display = "block"
 }
+
+
 
 
