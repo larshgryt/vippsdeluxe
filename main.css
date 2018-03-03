@@ -36,14 +36,12 @@ option {
     height: 60px;
     width: inherit;
     background: #007171;
+    padding-top: 10px;
+    padding-left: 10px; 
 }
 
 #topnavcontent {
     padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 25px;
-    font-style: #fff;
 }
 
 #searchbar {
@@ -69,6 +67,7 @@ option {
 
 .navtext {
     color: #ffffff;
+    font-size: 25px;
 }
 
 .searchinput {
