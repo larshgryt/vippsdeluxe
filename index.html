@@ -4,7 +4,6 @@
         
         <meta charset="utf8">
         <title>VIPPS GAVE</title>
-        <script src="script.js"></script>
         <meta name="description" content="En gavekorts tjeneste for Vipps">
         <link rel="stylesheet" href="main.css">
         
@@ -19,9 +18,9 @@
                 </div>
             </div>
             <div id="navbuttonsdiv">
-                <button class="navbutton" type="button">Send</button>
-                <button class="navbutton" type="button">Receive</button>
-                <button class="navbutton" type="button">History</button>
+                <button class="navbutton" type="button" onclick="sendPage()">Send</button>
+                <button class="navbutton" type="button" onclick="receivePage()">Receive</button>
+                <button class="navbutton" type="button" onclick="historyPage()">History</button>
             </div>
             <div id="searchbar">
                 <input class="searchinput" type="text" placeholder="Search by name or mobile number">
@@ -39,5 +38,6 @@
                 </select>
             </div>
         </div>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
