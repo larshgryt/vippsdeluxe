@@ -78,6 +78,7 @@ function backToSendGift(){
         preview.style.display = "none";
         sendifo_form.style.display = "block";
         topnav_button_left.innerHTML = "X";
+        topnav_button_right.style.display = "block";
     }
 }
 
