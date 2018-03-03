@@ -20,9 +20,9 @@
                 <span id="topnav_button_right" class="navtext" onclick="makePreview()"></span>
             </div>
             <div id="navbuttonsdiv">
-                <button class="navbutton" type="button" onclick="sendPage()">Send</button>
-                <button class="navbutton" type="button" onclick="receivePage()">Receive</button>
-                <button class="navbutton" type="button" onclick="historyPage()">History</button>
+                <button id="sendbtn" class="navbutton" type="button" onclick="sendPage()">Send</button>
+                <button id="receivebtn" class="navbutton" type="button" onclick="receivePage()">Receive</button>
+                <button id="histbtn" class="navbutton" type="button" onclick="historyPage()">History</button>
             </div>
             <div id="searchbar">
                 <input class="searchinput" type="text" placeholder="Search by name or mobile number">
@@ -62,7 +62,7 @@
                     <p>Postal code: <input type="" id="input_address_code" placeholder="postal code..." name=""></p>
                     <p><input type="button" name="" value="Upload image"></p>
                     </div>
-                    <p class="message"><input type="text" id="input_message" name="" placeholder="Write a message..."><span id="message_arrow">&gt;</span></p>
+                    <p class="message"><input type="text" id="input_message" name="" placeholder="Write a message..."><span id="message_arrow" onclick="makePreview()">&gt;</span></p>
                 </div>
 
                 <div id=preview>
