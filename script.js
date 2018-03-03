@@ -17,9 +17,10 @@ var output_zip = document.getElementById("output_zip");
 var output_amount= document.getElementById("output_amount");
 var output_street = document.getElementById("output_street");
 var output_message = document.getElementById("output_message");
-var sendbtn = document.getElementById("sendbtn");
-var receivebtn = document.getElementById("receivebtn");
-var histbtn = document.getElementById("histbtn");
+var sendbtn = document.getElementById("sendbtn")
+var receivebtn = document.getElementById("receivebtn")
+var histbtn = document.getElementById("histbtn")
+var fileUpload = document.getElementById("scan_button")
 
 sendbtn.style.borderBottom = "solid"
 sendbtn.style.borderBottomWidth = "2px";
@@ -135,6 +136,14 @@ function makePreview() {
 
 function sendGift(amount, image) {
     
+}
+
+document.getElementById("upload_image").onclick = function() {
+    document.getElementById("fileInput1").click();
+}
+
+document.getElementById("scan_button").onclick = function() {
+    document.getElementById("fileInput2").click();
 }
 
 
