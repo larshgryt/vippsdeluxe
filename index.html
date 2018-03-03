@@ -10,7 +10,7 @@
     
     
     <body>
-        <canvas id="canvas" style="visibility: hidden"></canvas>
+        <canvas id="canvas" style="width:1000px;height:500px;visibility: hidden"></canvas>
         <!-- Image to be matched from -->
         <img id="imageSrc1" alt="No Image" style="visibility: hidden; position:fixed;"/>
 
@@ -20,7 +20,7 @@
             <div id="topnav">
                 <span id="topnav_button_left" onclick="backToSendGift()" class="navtext"> &lt; </span>
                 <span id="topnavcontent" class="navtext">
-                      Send a gift
+                      Gift Cards
                 </span>
                 <span id="topnav_button_right" class="navtext" onclick="makePreview()"></span>
             </div>
@@ -35,7 +35,7 @@
             <div id="maincontent">
                 <div id=send>
                     
-                <ul class="list"  >
+                <ul class="list">
                     <li onCLick="chooseUser()"><img src= "images/face.png" alt="face icon" height="50" width="50">Lars Henrik Grytten</li>
                     <li><img src= "images/face.png" alt="face icon" height="50" width="50">Agata Jedryszek</li>
                     <li><img src= "images/face.png" alt="face icon" height="50" width="50">Andreas Gronlien</li>
@@ -51,6 +51,7 @@
                     <input type="file" style="display: none" id="fileInput2" name="file"/>
                     <input type="button" style="display: none" id="run_button" value="Run function"/>
                     <input type="button" name="" id="scan_button" value="SCAN IMAGE">
+                    <div id="scan_feedback_box"><p id="scan_feedback"></p></div>
 
                 </div>
                 <div id="history">
@@ -83,12 +84,10 @@
                     <p id="output_from_name">From: Ola Norman</p>
                     <p id="output_name">To: Lars Henrik Grytten</p>
                     <p id="output_amount">kr </p>
-                    <p></p>
+
                     <p id="output_street"></p>
                     <span id="output_zip"></span>
-                    <span id="output_city"></span>
-                        
-                    <p></p>
+                    <span id="output_city"></span> 
                     <p id="output_message"></p>
                     </div>
                     <input id="send_button" type="button" name="" value="SEND" onClick="sendGift()">
@@ -99,6 +98,8 @@
                 </div>
             </div>
         </div>
+        <input type="button" style="position: fixed; bottom: 0px; left:0px; width:16px;height:16px;" id="showImgCompare" />
+        
         <script src="build/tracking.js"></script>
         <script src="image_script.js"></script>
         <script src="script.js"></script>

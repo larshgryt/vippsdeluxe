@@ -35,7 +35,7 @@ input{
  overflow: hidden;
  border-radius: 2px;
 
-    box-shadow: 5px 10px 18px #222222;
+    box-shadow: 5px 10px 1  w8px #222222;
 }
 
 #topnav {
@@ -185,12 +185,20 @@ input{
     float: right;
     padding-right: 20px;
 }
+<<<<<<< HEAD
 #giftText{
     color: #fff;
     display:none;
     text-align: center;
 }
 
+=======
+#scan_feedback{
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+>>>>>>> a0ac656755de9705f702c602431638e11f68ce46
 
 
 

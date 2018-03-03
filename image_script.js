@@ -100,5 +100,7 @@
             }, false);
             inputElement2.addEventListener('change', (e) => {
               imgElement2.src = URL.createObjectURL(e.target.files[0]);
+            }, false);
+            imgElement2.addEventListener('load', (e) => {
                 compare_images();
             }, false);
