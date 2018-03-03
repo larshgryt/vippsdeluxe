@@ -91,7 +91,7 @@ function makePreview() {
     
     output_message.innerHTML = message;
     output_street.innerHTML = street;
-    output_amount.innerHTML = output_amount.innerHTML + amount;
+    output_amount.innerHTML = amount;
     output_zip.innerHTML = zip;
     output_city.innerHTML = city;
 
