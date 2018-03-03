@@ -14,7 +14,7 @@ function sendPage() {
     history.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "block";
-    formDiv.style.display = "none"
+    sendifo_form.style.display = "none";
 }
 
 function receivePage() {
@@ -22,8 +22,8 @@ function receivePage() {
     receive.style.display = "block";
     history.style.display = "none";
     buttonNavDiv.style.display = "block";
-    searchBar.style.display = "none"
-    formDiv.style.display = "none"
+    searchBar.style.display = "none";
+    sendifo_form.style.display = "none";
 }
 
 function historyPage() {
@@ -32,16 +32,15 @@ function historyPage() {
     history.style.display = "block";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none";
-    formDiv.style.display = "none"
+    sendifo_form.style.display = "none";
 }
 
 //When choosing a user to receive gift, enters "send mode"
 function chooseUser() {
-    send.style.display = "none"
-    buttonNavDiv.style.display = "none";
-    searchBar.style.display = "none"
-    sendifo_form.style.display = "block";
     send.style.display = "none";
+    buttonNavDiv.style.display = "none";
+    searchBar.style.display = "none";
+    sendifo_form.style.display = "block";
 
 }
 
