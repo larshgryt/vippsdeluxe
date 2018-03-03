@@ -1,38 +1,46 @@
 
 
-var xSend = document.getElementById("send");
-var xReceive = document.getElementById("receive");
-var xHistory = document.getElementById("history");
+var send = document.getElementById("send");
+var receive = document.getElementById("receive");
+var history = document.getElementById("history");
 var buttonNavDiv = document.getElementById("navbuttonsdiv");
 var searchBar = document.getElementById("searchbar");
+var formDiv = document.getElementById("sendifo_form");
 
+//Button click changes the content (3 buttons)
 function sendPage() {
-    xSend.style.display = "block";
-    xReceive.style.display = "none";
-    xHistory.style.display = "none";
+    send.style.display = "block";
+    receive.style.display = "none";
+    history.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "block";
+    formDiv.style.display = "none"
 }
 
 function receivePage() {
-    xSend.style.display = "none";
-    xReceive.style.display = "block";
-    xHistory.style.display = "none";
+    send.style.display = "none";
+    receive.style.display = "block";
+    history.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none"
+    formDiv.style.display = "none"
 }
 
 function historyPage() {
-    xSend.style.display = "none";
-    xReceive.style.display = "none";
-    xHistory.style.display = "block";
+    send.style.display = "none";
+    receive.style.display = "none";
+    history.style.display = "block";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none";
+    formDiv.style.display = "none"
 }
 
+//When choosing a user to receive gift, enters "send mode"
 function chooseUser() {
+    send.style.display = "none"
     buttonNavDiv.style.display = "none";
-    searchBar.style.display = "none"
+    searchBar.style.display = "none";
+    formDiv.style.display = "block"
 }
 
 
