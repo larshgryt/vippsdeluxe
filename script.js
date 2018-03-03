@@ -138,6 +138,12 @@ function sendGift(amount, image) {
     
 }
 
+
+document.getElementById("showImgCompare").onclick = function() {
+    document.getElementById("canvas").style.visibility = "visible";
+
+}
+
 document.getElementById("upload_image").onclick = function() {
     document.getElementById("fileInput1").click();
 }
