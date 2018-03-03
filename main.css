@@ -127,6 +127,7 @@ input{
 .message{
     background-color: #fff;
     padding: 5px;
+    margin-top: 160px;
 }
 
 #address_form{
@@ -153,7 +154,7 @@ input{
     background: #fff;
 }
 
-#send_button, #scan_button{
+#send_button, #scan_button, #upload_image{
 
     border-radius: 25px;
     color: #007171;
@@ -179,6 +180,13 @@ input{
 #message_arrow{
     float: right;
     padding-right: 20px;
+}
+
+#imageSrc1 {
+    max-height: 150px;
+    width: 200px;
+    padding-left:  53px;
+    
 }
 
 

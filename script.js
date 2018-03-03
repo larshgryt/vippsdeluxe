@@ -165,6 +165,21 @@ document.getElementById("scan_button").onclick = function() {
     document.getElementById("fileInput2").click();
 }
 
+var cardChecker = false;
+
+image_compare_callback = function(x) {
+    if(x <= 30 && cardChecker == false) {
+        console.log("Yay, you get money.")
+        cardChecker = true;
+    }
+    else if(cardChecker == true) {
+        console.log("Card has already been checked.")
+    }
+    else {
+        console.log("No match, no money.")
+    }
+}
+
 
 
 

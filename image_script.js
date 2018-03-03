@@ -4,6 +4,8 @@
             let inputElement1 = document.getElementById('fileInput1');
             let inputElement2 = document.getElementById('fileInput2');
             let run_button = document.getElementById('run_button');
+
+            var image_compare_callback;
             
             
             
@@ -87,6 +89,7 @@
                   
             
                   console.log(avg_clustering_distance);
+                  image_compare_callback(avg_clustering_distance);
             
             
             
