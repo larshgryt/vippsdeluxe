@@ -173,6 +173,13 @@ input{
 #history_list li{
     padding: 10px;
 }
+#history{
+    display: none;
+}
+#message_arrow{
+    float: right;
+    padding-right: 20px;
+}
 
 
 
