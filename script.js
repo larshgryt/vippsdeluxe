@@ -10,8 +10,13 @@ var sendifo_form = document.getElementById("sendifo_form");
 var topnav_button_left = document.getElementById("topnav_button_left");
 var topnav_button_right = document.getElementById("topnav_button_right");
 var preview = document.getElementById("preview");
-
-
+var output_from_name = document.getElementById("output_from_name");
+var output_name = document.getElementById("output_name");
+var output_city = document.getElementById("output_city");
+var output_zip = document.getElementById("output_zip");
+var output_amount= document.getElementById("output_amount");
+var output_street = document.getElementById("output_street");
+var output_message = document.getElementById("output_message");
 
 //Button click changes the content (3 buttons)
 function sendPage() {
@@ -61,13 +66,13 @@ function chooseUser() {
 
 function backToSendGift(){
 	if(topnav_button_left.innerHTML == "X"){
-		
-	   sendifo_form.style.display = "none";
-	   send.style.display = "block";
-       buttonNavDiv.style.display = "block";
-       searchBar.style.display = "block";
-       topnav_button_left.innerHTML = "&lt";
-       topnav_button_right.style.display = "none";
+        sendifo_form.style.display = "none";
+        send.style.display = "block";
+        buttonNavDiv.style.display = "block";
+        preview.style.display = "none";
+        searchBar.style.display = "block";
+        topnav_button_left.innerHTML = "&lt";
+        topnav_button_right.style.display = "none";
 	}
     else if(topnav_button_left.innerHTML == "&lt") {
         preview.style.display = "none";
@@ -83,8 +88,15 @@ function makePreview() {
     var city = document.getElementById("input_address_city").value;
     var zip = document.getElementById("input_address_code").value;
     
+    output_message.innerHTML = message;
+    output_street.innerHTML = street;
+    output_amount.innerHTML = output_amount.innerHTML + amount;
+    output_zip.innerHTML = zip;
+    output_city.innerHTML = city;
+
     topnav_button_left.innerHTML = "&lt";
     topnav_button_right.style.display = "none";
+
     sendifo_form.style.display = "none";
     preview.style.display = "block";
 }

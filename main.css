@@ -130,6 +130,7 @@ input{
 }
 .message{
     background-color: #fff;
+    padding: 5px;
 }
 
 #address_form{
@@ -143,10 +144,13 @@ input{
 }
 
 #preview{
+    display: none;
     background: #007171;
+    height: inherit;
 }
 
 #preview_content{
+    padding: 10px;
     margin:10px; 
     background: #fff;
 }
