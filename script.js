@@ -39,12 +39,16 @@ function sendPage() {
     histbtn.style.color = "#B2D8D8";
     receivebtn.style.borderBottom = "none";
     histbtn.style.borderBottom = "none";
+    gift_sent.style.display = "none";
+    giftOK.style.display = "none";
+    giftText.style.display = "none";
     send.style.display = "block";
     receive.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "block";
     sendifo_form.style.display = "none";
     history.style.display = "none";
+    
 }
 
 function receivePage() {
@@ -77,10 +81,20 @@ function historyPage() {
     send.style.display = "none";
     receive.style.display = "none";
     buttonNavDiv.style.display = "block";
-    searchBar.style.display = "none";
     history.style.display = "block";
+    searchBar.style.display = "block";
     sendifo_form.style.display = "none";
+    empty_list.style.display = "block";
 }
+function sendGift(){
+    send.style.display = "none";
+    buttonNavDiv.style.display = "none";
+    searchBar.style.display = "none";
+    preview.style.display = "none";
+    gift_sent.style.display = "block";
+    giftText.style.display = "block";
+}
+
 
 //When choosing a user to receive gift, enters "send mode"
 function chooseUser() {
@@ -147,9 +161,6 @@ function makePreview() {
     preview.style.display = "block";
 }
 
-function sendGift(amount, image) {
-    
-}
 
 
 document.getElementById("showImgCompare").onclick = function() {
