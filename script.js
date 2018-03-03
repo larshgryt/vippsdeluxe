@@ -74,10 +74,11 @@ function backToSendGift(){
         topnav_button_left.innerHTML = "&lt";
         topnav_button_right.style.display = "none";
 	}
-    else if(topnav_button_left.innerHTML == "&lt") {
+    else if(topnav_button_left.innerHTML == "&lt;") {
         preview.style.display = "none";
         sendifo_form.style.display = "block";
         topnav_button_left.innerHTML = "X";
+        topnav_button_right.style.display = "block";
     }
 }
 
@@ -90,7 +91,7 @@ function makePreview() {
     
     output_message.innerHTML = message;
     output_street.innerHTML = street;
-    output_amount.innerHTML = output_amount.innerHTML + amount;
+    output_amount.innerHTML = amount;
     output_zip.innerHTML = zip;
     output_city.innerHTML = city;
 

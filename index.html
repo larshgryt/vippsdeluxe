@@ -42,7 +42,10 @@
                 </ul>
                 </div>
                 <div id="receive"></div>
-                <div id="history"></div>
+                <div id="history">
+                    <p id=empty_list>You have not received or sent any gifts yet.</p>
+                    <ul id=history_list></ul>
+                </div>
                 <div id="sendifo_form">
                     <div class="center_element"><img src="images/face.png" alt="face icon" height="50" width="50">
 
@@ -56,7 +59,7 @@
                     <p>Postal code: <input type="" id="input_address_code" placeholder="postal code..." name=""></p>
                     <p><input type="button" name="" value="Upload image"></p>
                     </div>
-                    <p class="message"><input type="text" id="input_message" name="" placeholder="Write a message...">&gt;</p>
+                    <p class="message"><input type="text" id="input_message" name="" placeholder="Write a message..."><span id="message_arrow">&gt;</span></p>
                 </div>
 
                 <div id=preview>

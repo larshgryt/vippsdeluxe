@@ -147,6 +147,7 @@ input{
     display: none;
     background: #007171;
     height: inherit;
+    margin: auto;
 }
 
 #preview_content{
@@ -158,12 +159,26 @@ input{
 #send_button{
     border-radius: 25px;
     color: #007171;
+    background-color: #fff;
+    width: 10em;
+    height: 2em;
 }
 
 #topnav_button_right {
     float: right;
     padding-right: 30px;
     font-size: 30px;
+}
+
+#history_list li{
+    padding: 10px;
+}
+#history{
+    display: none;
+}
+#message_arrow{
+    float: right;
+    padding-right: 20px;
 }
 
 
