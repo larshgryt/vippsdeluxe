@@ -17,19 +17,21 @@ var output_zip = document.getElementById("output_zip");
 var output_amount= document.getElementById("output_amount");
 var output_street = document.getElementById("output_street");
 var output_message = document.getElementById("output_message");
-var sendbtn = document.getElementById("sendbtn")
-var receivebtn = document.getElementById("receivebtn")
-var histbtn = document.getElementById("histbtn")
-var fileUpload = document.getElementById("scan_button")
+var sendbtn = document.getElementById("sendbtn");
+var receivebtn = document.getElementById("receivebtn");
+var histbtn = document.getElementById("histbtn");
+var fileUpload = document.getElementById("scan_button");
+var mainContent = document.getElementById("maincontent");
+var titleText = document.getElementById("topnavcontent");
 
-sendbtn.style.borderBottom = "solid"
+sendbtn.style.borderBottom = "solid";
 sendbtn.style.borderBottomWidth = "2px";
 sendbtn.style.borderBottomColor= "#ffffff";
 sendbtn.style.color = "#ffffff";
 
 //Button click changes the content (3 buttons)
 function sendPage() {
-    sendbtn.style.borderBottom = "solid"
+    sendbtn.style.borderBottom = "solid";
     sendbtn.style.borderBottomWidth = "2px";
     sendbtn.style.borderBottomColor= "#ffffff";
     sendbtn.style.color = "#ffffff";
@@ -46,6 +48,7 @@ function sendPage() {
 }
 
 function receivePage() {
+    mainContent.style.height = "550px";
     receivebtn.style.borderBottom = "solid";
     receivebtn.style.borderBottomWidth = "2px";
     receivebtn.style.borderBottomColor= "#ffffff";
@@ -84,7 +87,9 @@ function chooseUser() {
 
     xhr.open("GET", "https://dnbapistore.com/hackathon/customers/3.0/customer/01011900123", true);
     xhr.setRequestHeader('Authorization', "Bearer 3274443e-de83-39b3-8087-2f17fe4e02ea");
-
+    
+    titleText.innerHTML = "Create card";
+    mainContent.style.height = "550px";
     send.style.display = "none";
     topnav_button_right.style.display = "block";
     buttonNavDiv.style.display = "none";
@@ -98,6 +103,8 @@ function chooseUser() {
 
 function backToSendGift(){
 	if(topnav_button_left.innerHTML == "X"){
+        mainContent.style.height = "550px";
+        titleText.innerHTML = "Gift Cards";
         sendifo_form.style.display = "none";
         send.style.display = "block";
         buttonNavDiv.style.display = "block";
@@ -107,6 +114,8 @@ function backToSendGift(){
         topnav_button_right.style.display = "none";
 	}
     else if(topnav_button_left.innerHTML == "&lt;") {
+        mainContent.style.height = "550px";
+        titleText.innerHTML = "Create Card";
         preview.style.display = "none";
         sendifo_form.style.display = "block";
         topnav_button_left.innerHTML = "X";
@@ -121,6 +130,10 @@ function makePreview() {
     var city = document.getElementById("input_address_city").value;
     var zip = document.getElementById("input_address_code").value;
     
+    
+    mainContent.style.height = "550px";
+    
+    titleText.innerHTML = "Card preview";
     output_message.innerHTML = message;
     output_street.innerHTML = street;
     output_amount.innerHTML = amount;
