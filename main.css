@@ -117,7 +117,11 @@ input{
     background: #007171;
     height: inherit;
 }
-
+#empty_list{
+    //display: none;
+    margin: 10px;
+    
+}
 .center_element img, .center_element p{
     display: block;
     margin: auto;
@@ -139,7 +143,7 @@ input{
     padding: 10px;
 }
 
-#preview{
+#preview, #gift_sent{
     display: none;
     background: #007171;
     height: inherit;
@@ -153,7 +157,7 @@ input{
     background: #fff;
 }
 
-#send_button, #scan_button{
+#send_button, #scan_button, #giftOK{
 
     border-radius: 25px;
     color: #007171;
@@ -175,11 +179,18 @@ input{
 }
 #history{
     display: none;
+    margin:10px;
 }
 #message_arrow{
     float: right;
     padding-right: 20px;
 }
+#giftText{
+    color: #fff;
+    display:none;
+    text-align: center;
+}
+
 
 
 

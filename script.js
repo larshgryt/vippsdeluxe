@@ -37,12 +37,16 @@ function sendPage() {
     histbtn.style.color = "#B2D8D8";
     receivebtn.style.borderBottom = "none";
     histbtn.style.borderBottom = "none";
+    gift_sent.style.display = "none";
+    giftOK.style.display = "none";
+    giftText.style.display = "none";
     send.style.display = "block";
     receive.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "block";
     sendifo_form.style.display = "none";
     history.style.display = "none";
+    
 }
 
 function receivePage() {
@@ -74,17 +78,23 @@ function historyPage() {
     send.style.display = "none";
     receive.style.display = "none";
     buttonNavDiv.style.display = "block";
-    searchBar.style.display = "none";
     history.style.display = "block";
+    searchBar.style.display = "block";
     sendifo_form.style.display = "none";
+    empty_list.style.display = "block";
 }
+function sendGift(){
+    send.style.display = "none";
+    buttonNavDiv.style.display = "none";
+    searchBar.style.display = "none";
+    preview.style.display = "none";
+    gift_sent.style.display = "block";
+    giftText.style.display = "block";
+}
+
 
 //When choosing a user to receive gift, enters "send mode"
 function chooseUser() {
-
-    xhr.open("GET", "https://dnbapistore.com/hackathon/customers/3.0/customer/01011900123", true);
-    xhr.setRequestHeader('Authorization', "Bearer 3274443e-de83-39b3-8087-2f17fe4e02ea");
-
     send.style.display = "none";
     topnav_button_right.style.display = "block";
     buttonNavDiv.style.display = "none";
@@ -134,9 +144,6 @@ function makePreview() {
     preview.style.display = "block";
 }
 
-function sendGift(amount, image) {
-    
-}
 
 document.getElementById("upload_image").onclick = function() {
     document.getElementById("fileInput1").click();

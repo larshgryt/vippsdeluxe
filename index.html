@@ -54,8 +54,11 @@
 
                 </div>
                 <div id="history">
-                    <p id=empty_list>You have not received or sent any gifts yet.</p>
-                    <ul id=history_list></ul>
+                    <p>You have not received or sent any gifts yet.</p>
+                    <p>Hello?</p>
+                    <ul id="history_list">
+                        <li>Hellu?</li>
+                    </ul>
                 </div>
                 <div id="sendifo_form">
                     <div class="center_element"><img src="images/face.png" alt="face icon" height="50" width="50">
@@ -88,7 +91,11 @@
                     <p></p>
                     <p id="output_message"></p>
                     </div>
-                    <input id="send_button" type="button" name="" value="SEND">
+                    <input id="send_button" type="button" name="" value="SEND" onClick="sendGift()">
+                </div>
+                <div id="gift_sent">
+                    <p id="giftText">Your gift is on its way!</p>
+                    <button id="giftOK" type="button" onClick="sendPage()">OK!</button>
                 </div>
             </div>
         </div>
