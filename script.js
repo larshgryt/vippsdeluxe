@@ -17,9 +17,9 @@ var output_zip = document.getElementById("output_zip");
 var output_amount= document.getElementById("output_amount");
 var output_street = document.getElementById("output_street");
 var output_message = document.getElementById("output_message");
-var sendbtn = document.getElementById("sendbtn")
-var receivebtn = document.getElementById("receivebtn")
-var histbtn = document.getElementById("histbtn")
+var sendbtn = document.getElementById("sendbtn");
+var receivebtn = document.getElementById("receivebtn");
+var histbtn = document.getElementById("histbtn");
 
 sendbtn.style.borderBottom = "solid"
 sendbtn.style.borderBottomWidth = "2px";
@@ -38,10 +38,10 @@ function sendPage() {
     histbtn.style.borderBottom = "none";
     send.style.display = "block";
     receive.style.display = "none";
-    history.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "block";
     sendifo_form.style.display = "none";
+    history.style.display = "none";
 }
 
 function receivePage() {
@@ -55,9 +55,9 @@ function receivePage() {
     histbtn.style.borderBottom = "none";
     send.style.display = "none";
     receive.style.display = "block";
-    history.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none";
+    history.style.display = "none";
     sendifo_form.style.display = "none";
 }
 
@@ -72,9 +72,9 @@ function historyPage() {
     receivebtn.style.borderBottom = "none";
     send.style.display = "none";
     receive.style.display = "none";
-    history.style.display = "block";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none";
+    history.style.display = "block";
     sendifo_form.style.display = "none";
 }
 
