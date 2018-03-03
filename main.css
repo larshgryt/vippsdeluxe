@@ -180,6 +180,11 @@ input{
     float: right;
     padding-right: 20px;
 }
+#scan_feedback{
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
 
 
 
