@@ -45,7 +45,7 @@ input{
 }
 
 #topnavcontent {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 #searchbar {
@@ -154,6 +154,12 @@ input{
 #send_button{
     border-radius: 25px;
     color: #007171;
+}
+
+#topnav_button_right {
+    float: right;
+    padding-right: 30px;
+    font-size: 30px;
 }
 
 

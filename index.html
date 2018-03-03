@@ -17,7 +17,7 @@
                 <span id="topnavcontent" class="navtext">
                       Send a gift
                 </span>
-                <span id="topnav_button_right" class="navtext" onclick="backToSendGift()"></span>
+                <span id="topnav_button_right" class="navtext" onclick="makePreview()"></span>
             </div>
             <div id="navbuttonsdiv">
                 <button class="navbutton" type="button" onclick="sendPage()">Send</button>
@@ -58,6 +58,7 @@
                     </div>
                     <p class="message"><input type="text" id="input_message" name="" placeholder="Write a message...">&gt;</p>
                 </div>
+
                 <div id=preview>
                     <p id="output_image"></p>
                     <div id=preview_content>
@@ -71,7 +72,6 @@
                     <p id="output_message"></p>
                     </div>
                     <input id="send_button" type="button" name="" value="SEND">
-                </div>
             </div>
         </div>
         <script type="text/javascript" src="script.js"></script>
