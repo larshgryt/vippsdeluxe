@@ -98,15 +98,14 @@ function sendGift(){
 
 //When choosing a user to receive gift, enters "send mode"
 function chooseUser() {
-<<<<<<< HEAD
-=======
+
 
     xhr.open("GET", "https://dnbapistore.com/hackathon/customers/3.0/customer/01011900123", true);
     xhr.setRequestHeader('Authorization', "Bearer 3274443e-de83-39b3-8087-2f17fe4e02ea");
     
     titleText.innerHTML = "Create card";
     mainContent.style.height = "550px";
->>>>>>> a0ac656755de9705f702c602431638e11f68ce46
+
     send.style.display = "none";
     topnav_button_right.style.display = "block";
     buttonNavDiv.style.display = "none";
