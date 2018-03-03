@@ -142,6 +142,20 @@ input{
     padding: 10px;
 }
 
+#preview{
+    background: #007171;
+}
+
+#preview_content{
+    margin:10px; 
+    background: #fff;
+}
+
+#send_button{
+    border-radius: 25px;
+    color: #007171;
+}
+
 
 
 
