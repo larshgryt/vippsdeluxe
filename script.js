@@ -53,7 +53,7 @@ function chooseUser() {
 }
 
 function backToSendGift(){
-	if(topnav_button_right.innerHTML == "X"){
+	if(topnav_button_left.innerHTML == "X"){
 		
 	   sendifo_form.style.display = "none";
 	   sendPage.style.display = "block";
