@@ -56,7 +56,7 @@ option {
 }
 
 #maincontent {
-    
+    height: 400px;
 }
 
 #navbuttonsdiv {
@@ -110,6 +110,8 @@ option {
 
 #sendifo_form{
     display: none;
+    background: #007171;
+    height: inherit;
 }
 
 

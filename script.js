@@ -6,6 +6,8 @@ var history = document.getElementById("history");
 var buttonNavDiv = document.getElementById("navbuttonsdiv");
 var searchBar = document.getElementById("searchbar");
 var sendifo_form = document.getElementById("sendifo_form");
+var topnav_button_left = document.getElementById("topnav_button_left");
+var topnav_button_right = document.getElementById("topnav_button_right");
 
 //Button click changes the content (3 buttons)
 function sendPage() {
@@ -41,7 +43,18 @@ function chooseUser() {
     buttonNavDiv.style.display = "none";
     searchBar.style.display = "none";
     sendifo_form.style.display = "block";
+    topnav_button_left.innerHTML = "X";
+    topnav_button_right.innerHTML = "&gt";
+    send.style.display = "none";
 
+}
+
+function backToSendGift(){
+	if(topnav_button_right.innerHTML == "X"){
+		
+	sendifo_form.style.display = "none";
+	sendPage.style.display = "block";
+	}
 }
 
 
