@@ -5,6 +5,7 @@ var xReceive = document.getElementById("receive");
 var xHistory = document.getElementById("history");
 var buttonNavDiv = document.getElementById("navbuttonsdiv");
 var searchBar = document.getElementById("searchbar");
+var sendifo_form = document.getElementById("sendifo_form");
 
 function sendPage() {
     xSend.style.display = "block";
@@ -33,6 +34,9 @@ function historyPage() {
 function chooseUser() {
     buttonNavDiv.style.display = "none";
     searchBar.style.display = "none"
+    sendifo_form.style.display = "block";
+    xSend.style.display = "none";
+
 }
 
 
