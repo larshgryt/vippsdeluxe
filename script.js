@@ -43,6 +43,7 @@ function historyPage() {
 //When choosing a user to receive gift, enters "send mode"
 function chooseUser() {
     send.style.display = "none";
+    topnav_button_right.style.display = "block";
     buttonNavDiv.style.display = "none";
     searchBar.style.display = "none";
     sendifo_form.style.display = "block";
@@ -58,8 +59,15 @@ function backToSendGift(){
 	   sendifo_form.style.display = "none";
 	   send.style.display = "block";
        buttonNavDiv.style.display = "block";
-       searchBar.style.display = "block"
+       searchBar.style.display = "block";
+       topnav_button_left.innerHTML = "&lt";
+       topnav_button_right.style.display = "none";
 	}
+    else if(topnav_button_left.innerHTML == "&lt") {
+        preview.style.display = "none";
+        sendifo_form.style.display = "block";
+        topnav_button_left.innerHTML = "X";
+    }
 }
 
 function makePreview() {
@@ -69,8 +77,10 @@ function makePreview() {
     var city = document.getElementById("input_address_city").value;
     var zip = document.getElementById("input_address_code").value;
     
+    topnav_button_left.innerHTML = "&lt";
+    topnav_button_right.style.display = "none";
     sendifo_form.style.display = "none";
-    preview.style.display = "block"
+    preview.style.display = "block";
 }
 
 
