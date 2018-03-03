@@ -146,9 +146,11 @@ input{
 #preview{
     display: none;
     background: #007171;
+    height: inherit;
 }
 
 #preview_content{
+    padding: 10px;
     margin:10px; 
     background: #fff;
 }

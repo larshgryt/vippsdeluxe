@@ -64,6 +64,7 @@ function backToSendGift(){
 	   send.style.display = "block";
        buttonNavDiv.style.display = "block";
        searchBar.style.display = "block"
+       preview.style.display = "none";
 	}
 }
 
