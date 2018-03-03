@@ -1,4 +1,5 @@
 
+var xhr = new XMLHttpRequest();
 
 var send = document.getElementById("send");
 var receive = document.getElementById("receive");
@@ -37,6 +38,7 @@ function receivePage() {
 }
 
 function historyPage() {
+
     send.style.display = "none";
     receive.style.display = "none";
     history.style.display = "block";
@@ -47,7 +49,12 @@ function historyPage() {
 
 //When choosing a user to receive gift, enters "send mode"
 function chooseUser() {
+
+    xhr.open("GET", "https://dnbapistore.com/hackathon/customers/3.0/customer/01011900123", true);
+    xhr.setRequestHeader('Authorization', "Bearer 3274443e-de83-39b3-8087-2f17fe4e02ea");
+
     send.style.display = "none";
+    topnav_button_right.style.display = "block";
     buttonNavDiv.style.display = "none";
     searchBar.style.display = "none";
     sendifo_form.style.display = "block";
@@ -63,9 +70,16 @@ function backToSendGift(){
 	   sendifo_form.style.display = "none";
 	   send.style.display = "block";
        buttonNavDiv.style.display = "block";
-       searchBar.style.display = "block"
        preview.style.display = "none";
+       searchBar.style.display = "block";
+       topnav_button_left.innerHTML = "&lt";
+       topnav_button_right.style.display = "none";
 	}
+    else if(topnav_button_left.innerHTML == "&lt") {
+        preview.style.display = "none";
+        sendifo_form.style.display = "block";
+        topnav_button_left.innerHTML = "X";
+    }
 }
 
 function makePreview() {
@@ -81,8 +95,11 @@ function makePreview() {
     output_zip.innerHTML = zip;
     output_city.innerHTML = city;
 
+    topnav_button_left.innerHTML = "&lt";
+    topnav_button_right.style.display = "none";
+
     sendifo_form.style.display = "none";
-    preview.style.display = "block"
+    preview.style.display = "block";
 }
 
 
