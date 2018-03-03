@@ -6,6 +6,8 @@ var xHistory = document.getElementById("history");
 var buttonNavDiv = document.getElementById("navbuttonsdiv");
 var searchBar = document.getElementById("searchbar");
 var sendifo_form = document.getElementById("sendifo_form");
+var topnav_button_left = document.getElementById("topnav_button_left");
+var topnav_button_right = document.getElementById("topnav_button_right");
 
 function sendPage() {
     xSend.style.display = "block";
@@ -36,6 +38,8 @@ function chooseUser() {
     searchBar.style.display = "none"
     sendifo_form.style.display = "block";
     xSend.style.display = "none";
+    topnav_button_left.innerHTML = "X";
+    topnav_button_right.innerHTML = "&gt";
 
 }
 
