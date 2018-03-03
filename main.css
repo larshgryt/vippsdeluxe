@@ -109,12 +109,8 @@ input{
     color: #fff;
 }
 
-#receive{
-    background: #007171;
-    height: inherit;
-}
 
-#sendifo_form{
+#receive, #sendifo_form{
     display: none;
     background: #007171;
     height: inherit;
