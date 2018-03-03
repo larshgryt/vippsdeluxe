@@ -208,6 +208,15 @@ input{
     
 }
 
+#scan_feedback_box {
+    background-color: #007171;
+}
+
+#scan_feedback {
+    background-color: #007171;
+    color: #fff;
+}
+
 
 
 

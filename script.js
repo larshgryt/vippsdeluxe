@@ -23,6 +23,7 @@ var histbtn = document.getElementById("histbtn");
 var fileUpload = document.getElementById("scan_button");
 var mainContent = document.getElementById("maincontent");
 var titleText = document.getElementById("topnavcontent");
+var report_text = document.getElementById("scan_feedback");
 
 sendbtn.style.borderBottom = "solid";
 sendbtn.style.borderBottomWidth = "2px";
@@ -180,14 +181,14 @@ var cardChecker = false;
 
 image_compare_callback = function(x) {
     if(x <= 30 && cardChecker == false) {
-        console.log("Yay, you get money.")
+        report_text.innerHTML = "Yay, you get money.";
         cardChecker = true;
     }
     else if(cardChecker == true) {
-        console.log("Card has already been checked.")
+        report_text.innerHTML = "Card already cashed.";
     }
     else {
-        console.log("No match, no money.")
+        report_text.innerHTML = "No match, no money.";
     }
 }
 
