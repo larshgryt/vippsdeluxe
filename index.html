@@ -17,7 +17,7 @@
                 <span id="topnavcontent" class="navtext">
                       Send a gift
                 </span>
-                <span id="topnav_button_right" class="navtext" onclick="makePreview"></span>
+                <span id="topnav_button_right" class="navtext" onclick="makePreview()"></span>
             </div>
             <div id="navbuttonsdiv">
                 <button class="navbutton" type="button" onclick="sendPage()">Send</button>
@@ -44,12 +44,19 @@
                 <div id="receive"></div>
                 <div id="history"></div>
                 <div id="sendifo_form">
-                    <p>Amount:<input type="number" id="input_amount" name=""></p>
-                    <p>Message:<input type="text" id="input_message" name=""></p>
-                    <p>Street: <input type="" id="input_address_street" name=""></p>
-                    <p>City/town: <input type="" id="input_address_city" name=""></p>
-                    <p>Postal code: <input type="" id="input_address_code" name=""></p>
+                    <div class="center_element"><img src="images/face.png" alt="face icon" height="50" width="50">
+
+                    <p class="whitetext">To: Lars Henrik Grytten</p>
+                    </div>
+                        
+                    <div id="address_form">
+                    <p>Amount: <input type="number" id="input_amount" name="" placeholder="kr"></p>
+                    <p>Street: <input type="" id="input_address_street" placeholder="street..." name=""></p>
+                    <p>City/town: <input type="" id="input_address_city" placeholder="city/town..." name=""></p>
+                    <p>Postal code: <input type="" id="input_address_code" placeholder="postal code..." name=""></p>
                     <p><input type="button" name="" value="Upload image"></p>
+                    </div>
+                    <p class="message"><input type="text" id="input_message" name="" placeholder="Write a message...">&gt;</p>
                 </div>
                 <div id="preview">
                     
