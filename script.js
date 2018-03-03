@@ -93,6 +93,7 @@ function sendGift(){
     preview.style.display = "none";
     gift_sent.style.display = "block";
     giftText.style.display = "block";
+    giftOK.style.display = "block";
 }
 
 
