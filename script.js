@@ -5,7 +5,7 @@ var receive = document.getElementById("receive");
 var history = document.getElementById("history");
 var buttonNavDiv = document.getElementById("navbuttonsdiv");
 var searchBar = document.getElementById("searchbar");
-var formDiv = document.getElementById("sendifo_form");
+var sendifo_form = document.getElementById("sendifo_form");
 
 //Button click changes the content (3 buttons)
 function sendPage() {
@@ -39,8 +39,10 @@ function historyPage() {
 function chooseUser() {
     send.style.display = "none"
     buttonNavDiv.style.display = "none";
-    searchBar.style.display = "none";
-    formDiv.style.display = "block"
+    searchBar.style.display = "none"
+    sendifo_form.style.display = "block";
+    send.style.display = "none";
+
 }
 
 
