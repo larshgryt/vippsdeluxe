@@ -17,9 +17,25 @@ var output_zip = document.getElementById("output_zip");
 var output_amount= document.getElementById("output_amount");
 var output_street = document.getElementById("output_street");
 var output_message = document.getElementById("output_message");
+var sendbtn = document.getElementById("sendbtn")
+var receivebtn = document.getElementById("receivebtn")
+var histbtn = document.getElementById("histbtn")
+
+sendbtn.style.borderBottom = "solid"
+sendbtn.style.borderBottomWidth = "2px";
+sendbtn.style.borderBottomColor= "#ffffff";
+sendbtn.style.color = "#ffffff";
 
 //Button click changes the content (3 buttons)
 function sendPage() {
+    sendbtn.style.borderBottom = "solid"
+    sendbtn.style.borderBottomWidth = "2px";
+    sendbtn.style.borderBottomColor= "#ffffff";
+    sendbtn.style.color = "#ffffff";
+    receivebtn.style.color = "#B2D8D8";
+    histbtn.style.color = "#B2D8D8";
+    receivebtn.style.borderBottom = "none";
+    histbtn.style.borderBottom = "none";
     send.style.display = "block";
     receive.style.display = "none";
     history.style.display = "none";
@@ -29,6 +45,14 @@ function sendPage() {
 }
 
 function receivePage() {
+    receivebtn.style.borderBottom = "solid";
+    receivebtn.style.borderBottomWidth = "2px";
+    receivebtn.style.borderBottomColor= "#ffffff";
+    receivebtn.style.color = "#ffffff";
+    sendbtn.style.color = "#B2D8D8";
+    histbtn.style.color = "#B2D8D8";
+    sendbtn.style.borderBottom = "none";
+    histbtn.style.borderBottom = "none";
     send.style.display = "none";
     receive.style.display = "block";
     history.style.display = "none";
@@ -38,7 +62,14 @@ function receivePage() {
 }
 
 function historyPage() {
-
+    histbtn.style.borderBottom = "solid";
+    histbtn.style.borderBottomWidth = "2px";
+    histbtn.style.borderBottomColor= "#ffffff";
+    histbtn.style.color = "#ffffff";
+    sendbtn.style.color = "#B2D8D8";
+    receivebtn.style.color = "#B2D8D8";
+    sendbtn.style.borderBottom = "none";
+    receivebtn.style.borderBottom = "none";
     send.style.display = "none";
     receive.style.display = "none";
     history.style.display = "block";

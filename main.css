@@ -37,7 +37,7 @@ input{
 }
 
 #topnav {
-    height: 60px;
+    height: 50px;
     width: inherit;
     background: #007171;
     padding-top: 10px;
@@ -96,13 +96,6 @@ input{
     vertical-align: middle;
 }
 
-.navbutton:focus {
-    border-bottom: solid;
-    border-width: 2px;
-    border-bottom-color: #ffffff;
-    color: #ffffff;
-}
-
 .list {
     width: 400px;
     height: 464px;
@@ -116,7 +109,8 @@ input{
     color: #fff;
 }
 
-#sendifo_form{
+
+#receive, #sendifo_form{
     display: none;
     background: #007171;
     height: inherit;
@@ -157,8 +151,8 @@ input{
     background: #fff;
 }
 
-#send_button{
-    
+#send_button, #scan_button{
+
     border-radius: 25px;
     color: #007171;
     margin:20px;
