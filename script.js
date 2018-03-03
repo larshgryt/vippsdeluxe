@@ -8,6 +8,9 @@ var searchBar = document.getElementById("searchbar");
 var sendifo_form = document.getElementById("sendifo_form");
 var topnav_button_left = document.getElementById("topnav_button_left");
 var topnav_button_right = document.getElementById("topnav_button_right");
+var preview = document.getElementById("preview");
+
+
 
 //Button click changes the content (3 buttons)
 function sendPage() {
@@ -52,10 +55,21 @@ function chooseUser() {
 function backToSendGift(){
 	if(topnav_button_right.innerHTML == "X"){
 		
-	sendifo_form.style.display = "none";
-	sendPage.style.display = "block";
+	   sendifo_form.style.display = "none";
+	   sendPage.style.display = "block";
 	}
 }
 
+function makePreview() {
+    var amount = document.getElementById("input_amount").value;
+    var message = document.getElementById("input_message").value;
+    var street = document.getElementById("input_address_street").value;
+    var city = document.getElementById("input_address_city").value;
+    var zip = document.getElementById("input_address_code").value;
+    var image = document.getElementById("image").value;
+    
+    sendifo_form.style.display = "none";
+    preview.style.display = "block"
+}
 
 
