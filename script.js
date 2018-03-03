@@ -39,10 +39,10 @@ function sendPage() {
     histbtn.style.borderBottom = "none";
     send.style.display = "block";
     receive.style.display = "none";
-    history.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "block";
     sendifo_form.style.display = "none";
+    history.style.display = "none";
 }
 
 function receivePage() {
@@ -56,9 +56,9 @@ function receivePage() {
     histbtn.style.borderBottom = "none";
     send.style.display = "none";
     receive.style.display = "block";
-    history.style.display = "none";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none";
+    history.style.display = "none";
     sendifo_form.style.display = "none";
 }
 
@@ -73,9 +73,9 @@ function historyPage() {
     receivebtn.style.borderBottom = "none";
     send.style.display = "none";
     receive.style.display = "none";
-    history.style.display = "block";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none";
+    history.style.display = "block";
     sendifo_form.style.display = "none";
 }
 
