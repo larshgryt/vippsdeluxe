@@ -89,7 +89,10 @@ function historyPage() {
     searchBar.style.display = "none";
     sendifo_form.style.display = "none";
     empty_history_list.style.display = "block";
-    report_text.innerHTML = "";
+
+    if (cardChecker===true){
+		empty_history_list.innerHTML = "You received and scanned a gift from Ola Norman";
+	}
 }
 
 var isImg = false;
