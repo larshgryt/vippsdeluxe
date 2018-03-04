@@ -87,6 +87,10 @@ function historyPage() {
     searchBar.style.display = "none";
     sendifo_form.style.display = "none";
     empty_history_list.style.display = "block";
+
+    if (report_text.innerHTML === "Yay, you get money."){
+		empty_history_list.innerHTML = "You received and scanned a gift from Ola Norman";
+	}
 }
 function sendGift(){
     send.style.display = "none";
@@ -164,8 +168,6 @@ function makePreview() {
     sendifo_form.style.display = "none";
     preview.style.display = "block";
 }
-
-
 
 document.getElementById("showImgCompare").onclick = function() {
     document.getElementById("canvas").style.visibility = "visible";
