@@ -176,9 +176,9 @@ input{
     background: #007171;
     height: inherit;
     margin: auto;
-    padding-top: 50%;
 }
 #gift_sent{
+    padding-top: 50%;
     font-size: 20px;
 }
 
