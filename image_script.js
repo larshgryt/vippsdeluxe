@@ -21,7 +21,7 @@
             
                 window.descriptorLength = 512;
                 window.matchesShown = 30;
-                window.blurRadius = 3;
+                window.blurRadius = 2;
                 var doMatch = function() {
                   tracking.Brief.N = window.descriptorLength;
                   context.drawImage(image1, 0, 0, width, height);
