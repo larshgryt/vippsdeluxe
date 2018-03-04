@@ -92,7 +92,7 @@ function historyPage() {
     empty_history_list.style.display = "block";
 
     if (cardChecker===true){
-		empty_history_list.innerHTML = "You received and scanned a gift from Ola Norman";
+		empty_history_list.innerHTML = "You received and scanned a gift from Ola Nordmann";
 	}
 }
 

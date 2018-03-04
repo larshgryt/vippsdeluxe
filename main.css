@@ -129,18 +129,12 @@ input{
     color: #fff;
 }
 
-/*
-#receive, #sendifo_form{
+
+#sendifo_form{
     display: none;
     background: #007171;
     height: 500px;
 }
-
-
-#receive {
-    background: #fff;
-}
-*/
 
 #empty_history_list{
     margin:20px;
