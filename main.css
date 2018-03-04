@@ -17,6 +17,16 @@ body {
  background-size: cover;
 }
 
+li {
+    text-align: left;
+    padding: 10px;
+}
+
+.face {
+    align-content: center;
+    padding-right: 20px;
+}
+
 option {
     height: 15%;
 }
