@@ -177,6 +177,10 @@ input{
     background: #007171;
     height: inherit;
     margin: auto;
+    padding-top: 50%;
+}
+#gift_sent{
+    font-size: 20px;
 }
 
 #preview_content{
