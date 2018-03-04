@@ -227,6 +227,12 @@ input{
     color: #fff;
 }
 
+li, #topnav_button_left, #topnav_button_right{
+    cursor: pointer;
+}
+
+
+
 
 
 

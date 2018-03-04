@@ -3,7 +3,7 @@ var xhr = new XMLHttpRequest();
 
 var send = document.getElementById("send");
 var receive = document.getElementById("receive");
-var history = document.getElementById("history");
+var gifthistory = document.getElementById("gifthistory");
 var buttonNavDiv = document.getElementById("navbuttonsdiv");
 var searchBar = document.getElementById("searchbar");
 var sendifo_form = document.getElementById("sendifo_form");
@@ -48,7 +48,7 @@ function sendPage() {
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "block";
     sendifo_form.style.display = "none";
-    history.style.display = "none";
+    gifthistory.style.display = "none";
     
 }
 
@@ -66,7 +66,7 @@ function receivePage() {
     receive.style.display = "block";
     buttonNavDiv.style.display = "block";
     searchBar.style.display = "none";
-    history.style.display = "none";
+    gifthistory.style.display = "none";
     sendifo_form.style.display = "none";
 }
 
@@ -82,10 +82,10 @@ function historyPage() {
     send.style.display = "none";
     receive.style.display = "none";
     buttonNavDiv.style.display = "block";
-    history.style.display = "block";
+    gifthistory.style.display = "block";
     searchBar.style.display = "block";
     sendifo_form.style.display = "none";
-    empty_list.style.display = "block";
+    empty_history_list.style.display = "block";
 }
 function sendGift(){
     send.style.display = "none";
