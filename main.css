@@ -35,6 +35,10 @@ input{
     border: none;
 }
 
+#input_message {
+    padding-bottom: 30px;
+}
+
 #mainarea {
  width: 400px;
  height: 600px;
@@ -52,7 +56,7 @@ input{
     height: 50px;
     width: inherit;
     background: #007171;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 10px; 
 }
 
@@ -125,7 +129,7 @@ input{
 #receive, #sendifo_form{
     display: none;
     background: #007171;
-    height: inherit;
+    height: ;
 }
 #empty_list{
     //display: none;
@@ -141,10 +145,12 @@ input{
 .message{
     background-color: #fff;
     padding: 5px;
-    margin-top: 160px;
+    margin-top: 140px;
 }
 
 #address_form{
+    width: 370px;
+    padding-left: 10px;
     border-radius: 25px;
     background: #fff;
     margin: 10px;
@@ -152,6 +158,15 @@ input{
 
 #address_form p{
     padding: 10px;
+    
+}
+
+#output_amount {
+    text-align: center;
+}
+
+#output_from_name {
+    text-align: right;
 }
 
 #preview, #gift_sent{
@@ -175,6 +190,15 @@ input{
     color: #007171;
     margin:20px;
     margin-left: 135px;
+    background-color: #fff;
+    width: 10em;
+    height: 2em;
+}
+
+#upload_image {
+    border-radius: 25px;
+    color: #007171;
+    margin:20px;
     background-color: #fff;
     width: 10em;
     height: 2em;
