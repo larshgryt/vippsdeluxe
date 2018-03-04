@@ -37,6 +37,7 @@ input{
 
 #input_message {
     padding-bottom: 5px;
+    width: 200px;
 }
 
 #mainarea {
