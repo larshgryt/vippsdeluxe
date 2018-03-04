@@ -49,6 +49,7 @@ function sendPage() {
     searchBar.style.display = "block";
     sendifo_form.style.display = "none";
     gifthistory.style.display = "none";
+    titleText.innerHTML = "Gift cards";
     
 }
 
