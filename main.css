@@ -131,10 +131,8 @@ input{
     background: #007171;
     height: ;
 }
-#empty_list{
-    //display: none;
-    margin: 10px;
-    
+#gift_history{
+    margin:20px;
 }
 .center_element img, .center_element p{
     display: block;
