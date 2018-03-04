@@ -24,6 +24,7 @@ var fileUpload = document.getElementById("scan_button");
 var mainContent = document.getElementById("maincontent");
 var titleText = document.getElementById("topnavcontent");
 var report_text = document.getElementById("scan_feedback");
+var check_upload = document.getElementById("check_upload");
 
 sendbtn.style.borderBottom = "solid";
 sendbtn.style.borderBottomWidth = "2px";
@@ -140,6 +141,7 @@ function backToSendGift(){
         searchBar.style.display = "block";
         topnav_button_left.innerHTML = "&lt";
         topnav_button_right.style.display = "none";
+        check_upload.style.display = "none";
 	}
     else if(topnav_button_left.innerHTML == "&lt;") {
         mainContent.style.height = "550px";
@@ -148,6 +150,7 @@ function backToSendGift(){
         sendifo_form.style.display = "block";
         topnav_button_left.innerHTML = "X";
         topnav_button_right.style.display = "block";
+        check_upload.style.display = "none";
     }
 }
 
@@ -173,6 +176,7 @@ function makePreview() {
 
     sendifo_form.style.display = "none";
     preview.style.display = "block";
+    check_upload.style.display = "none";
 }
 
 
@@ -184,6 +188,7 @@ document.getElementById("showImgCompare").onclick = function() {
 
 document.getElementById("upload_image").onclick = function() {
     document.getElementById("fileInput1").click();
+    check_upload.innerHTML = "Image has been uploaded";
 }
 
 document.getElementById("scan_button").onclick = function() {
@@ -204,7 +209,7 @@ image_compare_callback = function(x) {
     }
     else {
         console.log("nay")
-        report_text.innerHTML = "Sorry. This card is invalid. Try again?";
+        report_text.innerHTML = "Sorry, this card is invalid. Try again?";
     }
 }
 

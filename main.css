@@ -53,8 +53,7 @@ input{
  position: absolute;
  overflow: hidden;
  border-radius: 2px;
-
-    box-shadow: 5px 10px 1  w8px #222222;
+ box-shadow: 5px 10px 1  w8px #222222;
 }
 
 #topnav {
@@ -130,12 +129,19 @@ input{
     color: #fff;
 }
 
-
+/*
 #receive, #sendifo_form{
     display: none;
     background: #007171;
     height: 500px;
 }
+
+
+#receive {
+    background: #fff;
+}
+*/
+
 #empty_history_list{
     margin:20px;
 }
@@ -209,6 +215,8 @@ input{
 
 #scan_button {
     margin-top: 200px;
+    color: #fff;
+    background-color: #007171;
 }
 
 #upload_image {
@@ -259,12 +267,12 @@ input{
 }
 
 #scan_feedback_box {
-    background-color: #007171;
+    background-color: #fff;
 }
 
 #scan_feedback {
-    background-color: #007171;
-    color: #fff;
+    background-color: #fff;
+    color: #007171;
 }
 
 li, #topnav_button_left, #topnav_button_right{
@@ -272,8 +280,10 @@ li, #topnav_button_left, #topnav_button_right{
 }
 
 
-
-
+#check_upload {
+    padding-left: px;
+    color: #fff;
+}
 
 
 
