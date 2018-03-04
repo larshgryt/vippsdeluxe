@@ -90,7 +90,10 @@ function historyPage() {
     searchBar.style.display = "none";
     sendifo_form.style.display = "none";
     empty_history_list.style.display = "block";
-    report_text.innerHTML = "";
+
+    if (cardChecker===true){
+		empty_history_list.innerHTML = "You received and scanned a gift from Ola Norman";
+	}
 }
 
 var isImg = false;
@@ -179,10 +182,20 @@ function makePreview() {
     check_upload.style.display = "none";
 }
 
-
+var canvas_is_visible = false;
 
 document.getElementById("showImgCompare").onclick = function() {
-    document.getElementById("canvas").style.visibility = "visible";
+    if (canvas_is_visible) {
+        canvas_is_visible = false;
+        document.getElementById("canvas").style.visibility = "hidden";
+        document.getElementById("canvas").style.zIndex = -999;
+    } else {
+        canvas_is_visible = true;
+        document.getElementById("canvas").style.visibility = "visible";
+        document.getElementById("canvas").style.zIndex = 999;
+    }
+    
+    
 
 }
 
