@@ -19,7 +19,7 @@
                 var image2 = document.getElementById('imageSrc2');
             
             
-                window.descriptorLength = 256;
+                window.descriptorLength = 512;
                 window.matchesShown = 30;
                 window.blurRadius = 3;
                 var doMatch = function() {
