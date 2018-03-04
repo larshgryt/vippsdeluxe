@@ -84,7 +84,7 @@ function historyPage() {
     receive.style.display = "none";
     buttonNavDiv.style.display = "block";
     gifthistory.style.display = "block";
-    searchBar.style.display = "block";
+    searchBar.style.display = "none";
     sendifo_form.style.display = "none";
     empty_history_list.style.display = "block";
 }
@@ -115,6 +115,7 @@ function chooseUser() {
     topnav_button_left.innerHTML = "X";
     topnav_button_right.innerHTML = "&gt";
     send.style.display = "none";
+    gifthistory.style.display = "none";
 
 }
 
