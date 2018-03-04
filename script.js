@@ -175,10 +175,20 @@ function makePreview() {
     preview.style.display = "block";
 }
 
-
+var canvas_is_visible = false;
 
 document.getElementById("showImgCompare").onclick = function() {
-    document.getElementById("canvas").style.visibility = "visible";
+    if (canvas_is_visible) {
+        canvas_is_visible = false;
+        document.getElementById("canvas").style.visibility = "hidden";
+        document.getElementById("canvas").style.zIndex = -999;
+    } else {
+        canvas_is_visible = true;
+        document.getElementById("canvas").style.visibility = "visible";
+        document.getElementById("canvas").style.zIndex = 999;
+    }
+    
+    
 
 }
 
