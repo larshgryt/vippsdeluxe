@@ -50,6 +50,7 @@ function sendPage() {
     sendifo_form.style.display = "none";
     gifthistory.style.display = "none";
     titleText.innerHTML = "Gift cards";
+    topnav_button_left.style.visibility = "visible";
     
 }
 
@@ -69,6 +70,7 @@ function receivePage() {
     searchBar.style.display = "none";
     gifthistory.style.display = "none";
     sendifo_form.style.display = "none";
+    report_text.innerHTML = "";
 }
 
 function historyPage() {
@@ -87,7 +89,11 @@ function historyPage() {
     searchBar.style.display = "none";
     sendifo_form.style.display = "none";
     empty_history_list.style.display = "block";
+    report_text.innerHTML = "";
 }
+
+var isImg = false;
+
 function sendGift(){
     send.style.display = "none";
     buttonNavDiv.style.display = "none";
@@ -96,6 +102,10 @@ function sendGift(){
     gift_sent.style.display = "block";
     giftText.style.display = "block";
     giftOK.style.display = "block";
+    report_text.innerHTML = "";
+    topnav_button_left.style.visibility = "hidden";
+    isImg = true;
+    
 }
 
 
@@ -183,15 +193,18 @@ document.getElementById("scan_button").onclick = function() {
 var cardChecker = false;
 
 image_compare_callback = function(x) {
-    if(x <= 30 && cardChecker == false) {
-        report_text.innerHTML = "Yay, you get money.";
+    if(isImg == true && x <= 40 && cardChecker == false) {
+        console.log("yay")
+        report_text.innerHTML = "Congratulations! Your gift card has been redeemed.";
         cardChecker = true;
     }
-    else if(cardChecker == true) {
-        report_text.innerHTML = "Card already cashed.";
+    else if(isImg == true && x <= 40 && cardChecker == true) {
+        console.log("ok")
+        report_text.innerHTML = "Sorry, this card has already been redeemed.";
     }
     else {
-        report_text.innerHTML = "No match, no money.";
+        console.log("nay")
+        report_text.innerHTML = "Sorry. This card is invalid. Try again?";
     }
 }
 
