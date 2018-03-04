@@ -129,6 +129,7 @@ function chooseUser() {
     topnav_button_left.innerHTML = "X";
     topnav_button_right.innerHTML = "&gt";
     send.style.display = "none";
+    receive.style.display = "none";
     gifthistory.style.display = "none";
 
 }
