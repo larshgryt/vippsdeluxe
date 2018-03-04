@@ -10,6 +10,10 @@ src:url(kuro-regular.ttf) format('truetype');
  outline: none;
 }
 
+#scan_feedback {
+    text-align: center;
+}
+
 body {
  background-image: url("images/christmas.jpg"); 
  background-repeat: no-repeat;
@@ -37,7 +41,7 @@ input{
 
 #input_message {
     padding-bottom: 5px;
-    width: 200px;
+    width: 350px;
 }
 
 #mainarea {
@@ -177,7 +181,7 @@ input{
     background: #007171;
     height: inherit;
     margin: auto;
-    padding-top: 50%;
+    padding-top: 10%;
 }
 #gift_sent{
     font-size: 20px;
@@ -200,6 +204,10 @@ input{
     background-color: #fff;
     width: 10em;
     height: 2em;
+}
+
+#scan_button {
+    margin-top: 200px;
 }
 
 #upload_image {
