@@ -90,7 +90,7 @@ function historyPage() {
     sendifo_form.style.display = "none";
     empty_history_list.style.display = "block";
 
-    if (report_text.innerHTML === "Yay, you get money."){
+    if (cardChecker===true){
 		empty_history_list.innerHTML = "You received and scanned a gift from Ola Norman";
 	}
 }
